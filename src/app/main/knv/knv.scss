@@ -1,0 +1,14 @@
+.list-table-container {
+	margin-top: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+	.icon-trash {
+		color: #e74c3c;
+		cursor: pointer;
+	}
+
+	.icon-trash:hover {
+		color: #c0392b;
+	}
+}

@@ -21,6 +21,12 @@
             'app.quick-panel',
 
             // Sample
-            'app.sample'
+            // 'app.sample',
+
+            // 'app.kna',
+
+            'app.knv',
+
+            'app.kx'
         ]);
 })();

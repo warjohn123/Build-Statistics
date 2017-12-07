@@ -1,0 +1,85 @@
+md-dialog {
+
+  &.archive-dialog {
+    max-width: 450px;
+    width: 450px;
+
+    md-dialog-content {
+      display: block;
+      position: relative;
+
+      .php {
+        margin-top: 35px;
+        font-size: 11px;
+        color: #aaa
+      }
+
+      md-icon {
+        margin: 0 16px 0 0;
+      }
+
+      .event-detail-row {
+        margin-bottom: 32px;
+      }
+    }
+
+    form {
+      overflow: hidden;
+
+      md-toolbar {
+        .title {
+          font-size: 17px;
+        }
+      }
+
+      .date-row {
+
+        md-datepicker {
+          margin-right: 24px;
+        }
+      }
+
+      .notifications {
+        padding: 16px 0;
+
+        > .md-button {
+          margin: 0;
+        }
+      }
+    }
+
+    md-dialog-actions {
+      position: relative;
+      overflow-y: hidden;
+      overflow-x: auto;
+      border-top: 1px solid rgba(0, 0, 0, 0.12);
+      background-color: rgba(0, 0, 0, 0.03) !important;
+
+      md-progress-circular {
+        display: inline-block;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+// RESPONSIVE
+@media screen and (max-width: $layout-breakpoint-sm) {
+
+  md-dialog {
+
+    &.event-form-dialog {
+      width: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: $layout-breakpoint-xs) {
+
+  md-dialog {
+
+    &.event-form-dialog {
+      width: 90%;
+    }
+  }
+}

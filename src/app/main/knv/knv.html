@@ -1,0 +1,70 @@
+
+	<md-tabs>
+	  <md-tab label="Active">
+	  	<div class="list-table-container">
+		  	<table class="simple" ms-responsive-table class="list-table">
+		  		<tr>
+		  			<th>Date</th>
+		  			<th>Version</th>
+		  			<th>Model</th>
+		  			<th>Changelists</th>
+		  			<th>RequestEmail</th>
+		  			<th>StartEmail</th>
+		  			<!-- <th>Request Loc</th> -->
+		  			<!-- <th>Finished Loc</th> -->
+		  			<th>Completed</th>
+		  			<th>Total Build Time</th>
+		  		</tr>
+		  		<tr ng-repeat="build in vm.builds">
+		  			<td>{{build.date}}</td>
+		  			<td>{{build.version}}</td>
+		  			<td>{{build.model}}</td>
+		  			<td>{{build.changelist}}</td>
+		  			<td>{{build.date}}</td>
+		  			<td>{{build.date}}</td>
+		  			<!-- <td>{{build.date}}</td> -->
+		  			<!-- <td>{{build.date}}</td> -->
+		  			<td>{{build.date}}</td>
+		  			<td>{{build.date}}</td>
+		  			<td>
+		  				<i class="icon-trash"
+		                   ng-click="vm.archive();
+		                   $event.stopPropagation();">
+		                   <md-tooltip md-direction="left">Archive</md-tooltip>
+		               </i>
+		  			</td>
+		  		</tr>
+		  	</table>
+	  	</div>
+	  </md-tab>
+	  <md-tab label="Archived">
+	  	<div class="list-table-container">
+		  	<table class="simple" ms-responsive-table class="list-table">
+		  		<tr>
+		  			<th>Date</th>
+		  			<th>Version</th>
+		  			<th>Model</th>
+		  			<th>Changelists</th>
+		  			<th>RequestEmail</th>
+		  			<th>StartEmail</th>
+		  			<!-- <th>Request Loc</th> -->
+		  			<!-- <th>Finished Loc</th> -->
+		  			<th>Completed</th>
+		  			<th>Total Build Time</th>
+		  		</tr>
+		  		<tr ng-repeat="build in vm.builds">
+		  			<td>{{build.date}}</td>
+		  			<td>{{build.version}}</td>
+		  			<td>{{build.model}}</td>
+		  			<td>{{build.changelist}}</td>
+		  			<td>{{build.date}}</td>
+		  			<td>{{build.date}}</td>
+		  			<!-- <td>{{build.date}}</td> -->
+		  			<!-- <td>{{build.date}}</td> -->
+		  			<td>{{build.date}}</td>
+		  			<td>{{build.date}}</td>
+		  		</tr>
+		  	</table>
+	  	</div>
+	  </md-tab>
+	</md-tabs>
